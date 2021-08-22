@@ -21,9 +21,9 @@ namespace api.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<FeatureDto>>> GetFeatures()
+        public async Task<ActionResult<IEnumerable<KeyValuePairDto>>> GetFeatures()
         {
-            var features = await _context.Features.ProjectTo<FeatureDto>(_mapper.ConfigurationProvider).ToListAsync();
+            var features = await _context.Features.ProjectTo<KeyValuePairDto>(_mapper.ConfigurationProvider).ToListAsync();
             return Ok(features);
         }
     }

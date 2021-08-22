@@ -7,15 +7,6 @@ namespace api.Data.Models
 {
     public class Vehicle
     {
-        public Vehicle(int id, Model model, string contactName, string contactEmail, string contacPhone)
-        {
-            this.Id = id;
-            this.Model = model;
-            this.ContactName = contactName;
-            this.ContactEmail = contactEmail;
-            this.ContacPhone = contacPhone;
-
-        }
         public int Id { get; set; }
         public int ModelId { get; set; }
         public Model Model { get; set; }

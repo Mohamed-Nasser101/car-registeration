@@ -1,6 +1,7 @@
 using System;
 using System.Threading.Tasks;
 using api.Data;
+using api.Data.Interfaces;
 using api.Data.Models;
 using api.DTOs;
 using AutoMapper;
@@ -11,54 +12,64 @@ namespace api.Controllers
 {
     public class VehiclesController : BaseApiController
     {
-        private readonly ApplicationDBContext _context;
         private readonly IMapper _mapper;
-        public VehiclesController(ApplicationDBContext context, IMapper mapper)
+        private readonly IVehicleRepository _vehicleRepository;
+        private readonly IUnitOfWork _unitOfWork;
+
+        public VehiclesController(IMapper mapper, IVehicleRepository vehicleRepository, IUnitOfWork unitOfWork)
         {
-            _context = context;
+            _unitOfWork = unitOfWork;
+            _vehicleRepository = vehicleRepository;
             _mapper = mapper;
         }
+
         [HttpPost]
-        public async Task<ActionResult<VehicleDto>> CreateVehicle([FromBody] VehicleDto vehicleDto)
+        public async Task<ActionResult<SaveVehicleDto>> CreateVehicle([FromBody] SaveVehicleDto saveVehicleDto)
         {
-            var vehicle = _mapper.Map<VehicleDto, Vehicle>(vehicleDto);
+            var vehicle = _mapper.Map<SaveVehicleDto, Vehicle>(saveVehicleDto);
             vehicle.LastUpdate = DateTime.Now;
-            _context.Vehicles.Add(vehicle);
-            await _context.SaveChangesAsync();
+            _vehicleRepository.AddVehicle(vehicle);
+            await _unitOfWork.CompleteAsync();
+
+            vehicle = await _vehicleRepository.GetVehicle(vehicle.Id);
+
             return Ok(_mapper.Map<Vehicle, VehicleDto>(vehicle));
         }
+
         [HttpPut("{id}")]
-        public async Task<ActionResult<VehicleDto>> UpdateVehicle(int id, [FromBody] VehicleDto vehicleDto)
+        public async Task<ActionResult<SaveVehicleDto>> UpdateVehicle(int id, [FromBody] SaveVehicleDto saveVehicleDto)
         {
-            var vehicleInDb = await _context.Vehicles.Include(v => v.Features)
-            .FirstOrDefaultAsync(v => v.Id == id);
-            if (vehicleDto == null) return NotFound();
-            _mapper.Map<VehicleDto, Vehicle>(vehicleDto, vehicleInDb);
+            var vehicleInDb = await _vehicleRepository.GetVehicle(id);
+
+            if (saveVehicleDto == null) return NotFound();
+            _mapper.Map<SaveVehicleDto, Vehicle>(saveVehicleDto, vehicleInDb);
             vehicleInDb.LastUpdate = DateTime.Now;
-            await _context.SaveChangesAsync();
+            await _unitOfWork.CompleteAsync();
+            
+            vehicleInDb =await _vehicleRepository.GetVehicle(vehicleInDb.Id);
             return Ok(_mapper.Map<Vehicle, VehicleDto>(vehicleInDb));
         }
 
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteVehicle(int id)
         {
-            var vehicle = await _context.Vehicles.FindAsync(id);
+            var vehicle = await _vehicleRepository.GetVehicle(id, includeRelated: false);
             if (vehicle == null) return NotFound();
 
             // _context.Vehicles.Remove(vehicle);
-            _context.Remove(vehicle);
-            await _context.SaveChangesAsync();
+            _vehicleRepository.RemoveVehicle(vehicle);
+            await _unitOfWork.CompleteAsync();
             return Ok(id);
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult> GetVehicle(int id)
         {
-            var vehicle = await _context.Vehicles.Include(v => v.Features).FirstOrDefaultAsync(f => f.Id == id);
+            var vehicle = await _vehicleRepository.GetVehicle(id);
             if (vehicle == null) return NotFound();
 
-            var vehivleDto = _mapper.Map<Vehicle, VehicleDto>(vehicle);
-            return Ok(vehivleDto);
+            var vehicleDto = _mapper.Map<Vehicle, VehicleDto>(vehicle);
+            return Ok(vehicleDto);
         }
     }
 }
