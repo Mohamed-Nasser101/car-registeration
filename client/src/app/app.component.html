@@ -1,1 +1,32 @@
-<app-vehicle-form></app-vehicle-form>
+<!--<app-vehicle-form></app-vehicle-form>-->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" routerLink="/">Vega</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/vehicles">Vehicles</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/vehicle/new">New Vehicle</a>
+      </li>
+<!--      <li class="nav-item d-flex" routerLinkActive="active">-->
+<!--        <a class="nav-link" routerLink="/vehicle/12">Edit</a>-->
+<!--      </li>-->
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

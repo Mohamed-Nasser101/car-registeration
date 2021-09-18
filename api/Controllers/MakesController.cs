@@ -1,12 +1,11 @@
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using api.Data;
-using api.Data.Models;
 using api.DTOs;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace api.Controllers
 {

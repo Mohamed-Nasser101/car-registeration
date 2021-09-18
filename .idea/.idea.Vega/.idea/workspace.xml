@@ -6,17 +6,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27e55c39-cbc3-4ce5-a346-88531e1390e9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/dataSources/0f1d69e3-4148-4508-84bb-19ce49d947ee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/dataSources/0f1d69e3-4148-4508-84bb-19ce49d947ee.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/dataSources/0f1d69e3-4148-4508-84bb-19ce49d947ee/storage_v2/_src_/database/Vega.6Z8oAA/schema/dbo.sYMBAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/dataSources/0f1d69e3-4148-4508-84bb-19ce49d947ee/storage_v2/_src_/database/Vega.6Z8oAA/schema/dbo.sYMBAA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/Controllers/FeaturesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Controllers/FeaturesController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Vega/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Vega/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Vega/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Vega/v16/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/Controllers/MakesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Controllers/MakesController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/Controllers/VehiclesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Controllers/VehiclesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/DTOs/FeatureDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/DTOs/KeyValuePairDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/DTOs/MakeDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/DTOs/MakeDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/DTOs/ModelDto.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/DTOs/VehicleDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/DTOs/SaveVehicleDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/Data/Models/Vehicle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Data/Models/Vehicle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/helpers/AutoMapperProfiles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/helpers/AutoMapperProfiles.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/Data/Interfaces/IVehicleRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Data/Interfaces/IVehicleRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/Data/Repositories/VehicleRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Data/Repositories/VehicleRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/api/api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/vehicle-form/vehicle-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/vehicle-form/vehicle-form.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/vehicle-form/vehicle-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/vehicle-form/vehicle-form.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/services/vehicle.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/services/vehicle.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/environments/environment.prod.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +53,22 @@
       <option value="$PROJECT_DIR$/api/helpers/AutoMapperProfiles.cs" />
       <option value="$PROJECT_DIR$/api/Startup.cs" />
       <option value="$PROJECT_DIR$/api/Data/Repositories/UnitOfWork.cs" />
+      <option value="$PROJECT_DIR$/client/src/app/models/contact.ts" />
+      <option value="$PROJECT_DIR$/client/src/environments/environment.prod.ts" />
+      <option value="$PROJECT_DIR$/client/src/app/helpers/appErrorHandler.ts" />
+      <option value="$PROJECT_DIR$/client/angular.json" />
+      <option value="$PROJECT_DIR$/client/src/app/models/vehicle.ts" />
+      <option value="$PROJECT_DIR$/client/src/app/components/vehicle-form/vehicle-form.component.html" />
+      <option value="$PROJECT_DIR$/client/src/app/components/vehicle-form/NewFile1.js" />
+      <option value="$PROJECT_DIR$/client/src/app/app.component.html" />
+      <option value="$PROJECT_DIR$/client/src/app/app.module.ts" />
+      <option value="$PROJECT_DIR$/client/src/app/components/vehicle-form/vehicle-form.component.ts" />
       <option value="$PROJECT_DIR$/api/Controllers/VehiclesController.cs" />
+      <option value="$PROJECT_DIR$/api/Data/Interfaces/IVehicleRepository.cs" />
+      <option value="$PROJECT_DIR$/api/Data/Repositories/VehicleRepository.cs" />
+      <option value="$PROJECT_DIR$/client/src/app/services/vehicle.service.ts" />
+      <option value="$PROJECT_DIR$/client/src/app/components/vehicles/vehicles.component.ts" />
+      <option value="$PROJECT_DIR$/client/src/app/components/vehicles/vehicles.component.html" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1widSmE9tcD6WHtJUtGxE26jNdJ" />
@@ -64,7 +87,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="com.maddyhome.idea.vim.ui.VimEmulationConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="ts.external.directory.path" value="C:\Users\fg_dell\source\repos\Vega\client\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.api">
@@ -148,8 +172,32 @@
       <workItem from="1628945420269" duration="1164000" />
       <workItem from="1628947113879" duration="692000" />
       <workItem from="1629060861111" duration="2552000" />
-      <workItem from="1629674393380" duration="375000" />
+      <workItem from="1629674393380" duration="7280000" />
+      <workItem from="1630154197261" duration="3472000" />
+      <workItem from="1630164642456" duration="7325000" />
+      <workItem from="1630187226322" duration="923000" />
+      <workItem from="1630452597785" duration="3993000" />
+      <workItem from="1631576254774" duration="21000" />
+      <workItem from="1631576488287" duration="4574000" />
+      <workItem from="1631665834150" duration="3643000" />
+      <workItem from="1631918270575" duration="1641000" />
+      <workItem from="1631927946006" duration="5918000" />
     </task>
+    <task id="LOCAL-00001" summary="add repository and unit of work">
+      <created>1629674981081</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1629674981081</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix">
+      <created>1629675018032</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1629675018032</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,5 +217,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="add repository and unit of work" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
 </project>

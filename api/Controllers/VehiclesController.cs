@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using api.Data;
 using api.Data.Interfaces;
@@ -45,8 +46,8 @@ namespace api.Controllers
             _mapper.Map<SaveVehicleDto, Vehicle>(saveVehicleDto, vehicleInDb);
             vehicleInDb.LastUpdate = DateTime.Now;
             await _unitOfWork.CompleteAsync();
-            
-            vehicleInDb =await _vehicleRepository.GetVehicle(vehicleInDb.Id);
+
+            vehicleInDb = await _vehicleRepository.GetVehicle(vehicleInDb.Id);
             return Ok(_mapper.Map<Vehicle, VehicleDto>(vehicleInDb));
         }
 
@@ -70,6 +71,13 @@ namespace api.Controllers
 
             var vehicleDto = _mapper.Map<Vehicle, VehicleDto>(vehicle);
             return Ok(vehicleDto);
+        }
+
+        [HttpGet]
+        public async Task<ActionResult> GetVehicles(int makeId)
+        {
+            var vehicles = await _vehicleRepository.GetVehicles(makeId);
+            return Ok(_mapper.Map<IEnumerable<Vehicle>, IEnumerable<VehicleDto>>(vehicles));
         }
     }
 }

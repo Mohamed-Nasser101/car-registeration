@@ -1,48 +1,53 @@
 <div class="row container">
-  <form #f="ngForm" (ngSubmit)="SubmitForm()" class="py-2 my-5 col-6 mx-auto">
+  <form #f="ngForm" (ngSubmit)="SubmitForm()" class="py-2 my-5 col-6 mx-auto" novalidate>
     <div class="form-group">
       <label for="make">Make</label>
       <select required ngModel #m class="form-control" (change)="SelectMake(m.value)" name="make" id="make">
-        <option disabled selected value> -- select an option -- </option>
+        <option disabled selected value> -- select an option --</option>
         <option *ngFor="let make of makes" value="{{ make.id}}">{{make.name}}</option>
       </select>
     </div>
     <div class="form-group">
       <label for="make">Model</label>
-      <select ngModel required class="form-control" name="model" id="model">
+      <select [(ngModel)]="vehicle.modelId" required class="form-control" name="modelId" id="model">
         <option *ngFor="let model of selectedModels" value="{{model.id}}">{{model.name}}</option>
       </select>
     </div>
     <p>Is this car registered?</p>
     <div class="form-check">
-      <input #r ngModel class="form-check-input" name="register" type="radio" value="yes" id="registerd">
+      <input #r [(ngModel)]="vehicle.isRegistered" class="form-check-input" name="isRegister" type="radio"
+             [value]="true" id="registerd">
       <label class="form-check-label" for="registerd">yes</label>
     </div>
     <div class="form-check">
-      <input [required]="!f.controls['register']?.touched" ngModel class="form-check-input" name="register" type="radio"
-        value="no" id="notregistered">
+      <input [required]="!f.controls['register']?.touched" [(ngModel)]="vehicle.isRegistered" class="form-check-input"
+             name="isRegister" type="radio"
+             [value]="false" id="notregistered">
       <label class="form-check-label" for="notregistered">no</label>
     </div>
     <p>Features</p>
     <div *ngFor="let feature of features;let i = index" class="form-check">
       <!-- <input ngModel class="form-check-input" name="feature-{{feature.id}}" type="checkbox" value="{{feature.id}}"> -->
-      <input ngModel class="form-check-input" [value]="feature.id" name="feature{{feature.id}}" type="checkbox">
+      <input (change)="toggleFeature(feature.id,$event)" [checked]="vehicle.features.includes(feature.id)"
+             class="form-check-input" [value]="feature.id"
+             name="feature-{{feature.id}}" type="checkbox">
       <label class="form-check-label">
         {{feature.name}}
       </label>
     </div>
     <div class="form-group">
       <label for="name">Name</label>
-      <input ngModel required class="form-control" type="text" name="name" id="name">
+      <input [(ngModel)]="vehicle.contact.name" required class="form-control" type="text" name="name" id="name">
     </div>
     <div class="form-group">
       <label for="Phone">Phone</label>
-      <input ngModel required class="form-control" type="text" name="phone" id="pnone">
+      <input [(ngModel)]="vehicle.contact.phone" required class="form-control" type="text" name="phone" id="phone">
     </div>
     <div class="form-group">
       <label for="email">Email</label>
-      <input ngModel required class="form-control" type="email" name="email" id="email">
+      <input [(ngModel)]="vehicle.contact.email" required class="form-control" type="email" name="email" id="email">
     </div>
-    <button class="btn btn-primary btn-block" type="submit">Save</button>
+    <button [disabled]="f.invalid" class="btn btn-primary btn-block" type="submit">Save</button>
+    <button [hidden]="!editMode" (click)="delete()" class="btn btn-danger btn-block" type="button">Delete</button>
   </form>
 </div>
