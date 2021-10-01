@@ -2,8 +2,9 @@ import {Feature} from '../models/Feature';
 import {Make} from '../models/Make';
 import {environment} from '../../environments/environment';
 import {Injectable} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import {HttpClient, HttpParams} from '@angular/common/http';
 import {ServerVehicle, Vehicle} from "../models/vehicle";
+import {Query} from "../models/query";
 
 @Injectable({
   providedIn: 'root'
@@ -30,8 +31,9 @@ export class VehicleService {
     return this.http.get<ServerVehicle>(`${this.url}/vehicles/${id}`);
   }
 
-  getVehicles(makeId: number) {
-    return this.http.get<ServerVehicle[]>(`${this.url}/vehicles?makeId=${makeId}`);
+  getVehicles(query: Query) {
+    let params = this.setParams(query);
+    return this.http.get<ServerVehicle[]>(`${this.url}/vehicles`, {observe: 'response', params});
   }
 
   updateVehicle(vehicle: Vehicle) {
@@ -56,5 +58,16 @@ export class VehicleService {
     vehicle.features = serverVehicle.features.map(f => f.id);
     vehicle.contact = serverVehicle.contact;
     return vehicle;
+  }
+
+  private setParams(query: Query) {
+    let params = new HttpParams();
+    params = params.append('makeId', query.makeId);
+    params = params.append('currentPage', query.currentPage);
+    params = params.append('itemPerPage', query.itemPerPage);
+    params = params.append('sortType', query.sortType);
+    params = params.append('isAscending', query.isAscending);
+
+    return params;
   }
 }

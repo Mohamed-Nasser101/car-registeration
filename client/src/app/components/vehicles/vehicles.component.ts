@@ -4,6 +4,8 @@ import {VehicleService} from "../../services/vehicle.service";
 import {ToastrService} from "ngx-toastr";
 import {Make} from "../../models/Make";
 import {forkJoin} from "rxjs";
+import {map} from "rxjs/operators";
+import { Query } from '../../models/query';
 
 @Component({
   selector: 'app-vehicles',
@@ -13,14 +15,21 @@ import {forkJoin} from "rxjs";
 export class VehiclesComponent implements OnInit {
   vehicles: ServerVehicle[];
   makes: Make[];
+  pageCount: any;
+  query: Query = { makeId: 0, currentPage: 1, isAscending: true, itemPerPage: 5, sortType: 'make' };
 
   constructor(private vehicleService: VehicleService, private toastr: ToastrService) {
   }
 
   ngOnInit(): void {
-    forkJoin([this.vehicleService.getMakes(), this.vehicleService.getVehicles(0)]).subscribe(data => {
+    forkJoin([
+      this.vehicleService.getMakes(),
+      this.vehicleService.getVehicles(this.query)
+    ]).subscribe(data => {
       this.makes = data[0];
-      this.vehicles = data[1];
+      this.vehicles = data[1].body as ServerVehicle[];
+      let pagination = JSON.parse(data[1].headers.get('pagination') ?? '');
+      this.pageCount = pagination.pageCount;
     });
   }
 
@@ -36,7 +45,24 @@ export class VehiclesComponent implements OnInit {
     }
   }
 
-  filter(value: string) {
-    this.vehicleService.getVehicles(+value).subscribe(vehicle => this.vehicles = vehicle);
+  filter() {
+    this.query.currentPage = 1;
+    this.vehicleService.getVehicles(this.query)
+      //.pipe(map(vehicle => vehicle.body as ServerVehicle[]))
+      .subscribe(data => {
+        this.vehicles = data.body as ServerVehicle[];
+        this.pageCount = JSON.parse(data.headers.get('pagination') ?? '').pageCount;
+      });
+  }
+
+  setSort(type: string) {
+    if (this.query.sortType == type) this.query.isAscending = !this.query.isAscending;
+    else this.query.isAscending = true;
+    this.query.sortType = type;
+    this.filter();
+  }
+  changePage(page: number) {
+    this.query.currentPage = page;
+    this.filter();
   }
 }

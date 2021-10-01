@@ -6,25 +6,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27e55c39-cbc3-4ce5-a346-88531e1390e9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/dataSources/0f1d69e3-4148-4508-84bb-19ce49d947ee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/dataSources/0f1d69e3-4148-4508-84bb-19ce49d947ee.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/dataSources/0f1d69e3-4148-4508-84bb-19ce49d947ee/storage_v2/_src_/database/Vega.6Z8oAA/schema/dbo.sYMBAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/dataSources/0f1d69e3-4148-4508-84bb-19ce49d947ee/storage_v2/_src_/database/Vega.6Z8oAA/schema/dbo.sYMBAA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/config/applicationhost.config" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/config/applicationhost.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/Vega/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Vega/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Vega/config/applicationhost.config" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Vega/config/applicationhost.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/Vega/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Vega/v16/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/Controllers/MakesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Controllers/MakesController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vega.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/Controllers/VehiclesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Controllers/VehiclesController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/Data/Interfaces/IVehicleRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Data/Interfaces/IVehicleRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/Data/Repositories/VehicleRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Data/Repositories/VehicleRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/api/api.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/components/vehicle-form/vehicle-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/vehicle-form/vehicle-form.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/components/vehicle-form/vehicle-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/vehicle-form/vehicle-form.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/vehicles/vehicles.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/vehicles/vehicles.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/vehicles/vehicles.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/vehicles/vehicles.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/services/vehicle.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/services/vehicle.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/environments/environment.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,12 +58,21 @@
       <option value="$PROJECT_DIR$/client/src/app/app.component.html" />
       <option value="$PROJECT_DIR$/client/src/app/app.module.ts" />
       <option value="$PROJECT_DIR$/client/src/app/components/vehicle-form/vehicle-form.component.ts" />
-      <option value="$PROJECT_DIR$/api/Controllers/VehiclesController.cs" />
+      <option value="$PROJECT_DIR$/api/helpers/PagedList.cs" />
+      <option value="$PROJECT_DIR$/client/src/app/components/pagination/pagination.component.html" />
+      <option value="$PROJECT_DIR$/client/src/app/components/pagination/pagination.component.ts" />
+      <option value="$PROJECT_DIR$/client/src/app/components/vehicles/vehicles.component.html" />
       <option value="$PROJECT_DIR$/api/Data/Interfaces/IVehicleRepository.cs" />
+      <option value="$PROJECT_DIR$/api/Extensions/IQeurableExtension.cs" />
+      <option value="$PROJECT_DIR$/api/Extensions/IQueryableExtension.cs" />
       <option value="$PROJECT_DIR$/api/Data/Repositories/VehicleRepository.cs" />
+      <option value="$PROJECT_DIR$/api/Data/Interfaces/ISortQuery.cs" />
+      <option value="$PROJECT_DIR$/api/DTOs/QueryDto.cs" />
+      <option value="$PROJECT_DIR$/api/Extensions/QueryableExtension.cs" />
+      <option value="$PROJECT_DIR$/client/src/app/models/query.ts" />
       <option value="$PROJECT_DIR$/client/src/app/services/vehicle.service.ts" />
       <option value="$PROJECT_DIR$/client/src/app/components/vehicles/vehicles.component.ts" />
-      <option value="$PROJECT_DIR$/client/src/app/components/vehicles/vehicles.component.html" />
+      <option value="$PROJECT_DIR$/api/Controllers/VehiclesController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1widSmE9tcD6WHtJUtGxE26jNdJ" />
@@ -83,15 +87,17 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="sqlserver" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3498452" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="ts.external.directory.path" value="C:\Users\fg_dell\source\repos\Vega\client\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.api">
+  <component name="RunManager" selected=".NET Launch Settings Profile.api: IIS Express">
     <configuration default="true" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -182,6 +188,16 @@
       <workItem from="1631665834150" duration="3643000" />
       <workItem from="1631918270575" duration="1641000" />
       <workItem from="1631927946006" duration="5918000" />
+      <workItem from="1631985071631" duration="5923000" />
+      <workItem from="1631993964895" duration="3607000" />
+      <workItem from="1632097616575" duration="2879000" />
+      <workItem from="1632193432613" duration="2939000" />
+      <workItem from="1632284084469" duration="2921000" />
+      <workItem from="1632586833753" duration="101000" />
+      <workItem from="1632587071848" duration="133000" />
+      <workItem from="1632587273383" duration="973000" />
+      <workItem from="1632802409809" duration="1906000" />
+      <workItem from="1632851522520" duration="1315000" />
     </task>
     <task id="LOCAL-00001" summary="add repository and unit of work">
       <created>1629674981081</created>
@@ -220,5 +236,9 @@
     <MESSAGE value="add repository and unit of work" />
     <MESSAGE value="fix" />
     <option name="LAST_COMMIT_MESSAGE" value="fix" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

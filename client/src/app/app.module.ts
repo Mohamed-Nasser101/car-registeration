@@ -10,6 +10,7 @@ import {RouterModule, Routes} from "@angular/router";
 import {ToastrModule} from "ngx-toastr";
 import {AppErrorHandler} from "./helpers/appErrorHandler";
 import {VehiclesComponent} from './components/vehicles/vehicles.component';
+import { PaginationComponent } from './components/pagination/pagination.component';
 
 let routes: Routes = [
   {path: "", redirectTo: 'vehicles', pathMatch: "full"},
@@ -23,7 +24,8 @@ let routes: Routes = [
   declarations: [
     AppComponent,
     VehicleFormComponent,
-    VehiclesComponent
+    VehiclesComponent,
+    PaginationComponent
   ],
   imports: [
     BrowserModule,

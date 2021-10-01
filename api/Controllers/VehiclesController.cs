@@ -1,13 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using api.Data;
 using api.Data.Interfaces;
 using api.Data.Models;
 using api.DTOs;
+using api.Extensions;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace api.Controllers
 {
@@ -72,11 +71,13 @@ namespace api.Controllers
             var vehicleDto = _mapper.Map<Vehicle, VehicleDto>(vehicle);
             return Ok(vehicleDto);
         }
-
+        
         [HttpGet]
-        public async Task<ActionResult> GetVehicles(int makeId)
+        public async Task<ActionResult> GetVehicles([FromQuery] QueryDto query)
         {
-            var vehicles = await _vehicleRepository.GetVehicles(makeId);
+            var vehicles = await _vehicleRepository.GetVehicles(query);
+            Response.AddPagination(vehicles.TotalCount, vehicles.ItemsPerPage, vehicles.PageCount, vehicles.CurrentPage,
+                vehicles.PageItemCount);
             return Ok(_mapper.Map<IEnumerable<Vehicle>, IEnumerable<VehicleDto>>(vehicles));
         }
     }
