@@ -10,21 +10,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/dataSources/0f1d69e3-4148-4508-84bb-19ce49d947ee/storage_v2/_src_/database/Vega.6Z8oAA/schema/dbo.sYMBAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/dataSources/0f1d69e3-4148-4508-84bb-19ce49d947ee/storage_v2/_src_/database/Vega.6Z8oAA/schema/dbo.sYMBAA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/Data/ApplicationDBContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Data/ApplicationDBContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/Data/Interfaces/IVehicleRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Data/Interfaces/IVehicleRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/Data/Models/Vehicle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Data/Models/Vehicle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/Data/Repositories/VehicleRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Data/Repositories/VehicleRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/Migrations/ApplicationDBContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Migrations/ApplicationDBContextModelSnapshot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/api/api.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/helpers/AutoMapperProfiles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/helpers/AutoMapperProfiles.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/components/pagination/pagination.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/pagination/pagination.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/components/vehicles/vehicles.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/vehicles/vehicles.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/components/vehicles/vehicles.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/vehicles/vehicles.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/services/vehicle.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/services/vehicle.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,13 +38,11 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://D:/courses/C#/chat app asp core &amp; angular/CoreApp/DatingApp/API/DTOs/UserDto.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0f1d69e3-4148-4508-84bb-19ce49d947ee/console.sql" />
-      <option value="$PROJECT_DIR$/api/DTOs/SaveVehicleDto.cs" />
-      <option value="$PROJECT_DIR$/api/DTOs/KeyValuePairDto.cs" />
-      <option value="$PROJECT_DIR$/api/DTOs/MakeDto.cs" />
-      <option value="$PROJECT_DIR$/api/DTOs/VehicleDto.cs" />
       <option value="$PROJECT_DIR$/api/Data/Repositories/UnitOfWork.cs" />
       <option value="$PROJECT_DIR$/client/src/app/models/contact.ts" />
       <option value="$PROJECT_DIR$/client/src/environments/environment.prod.ts" />
@@ -80,11 +67,8 @@
       <option value="$PROJECT_DIR$/client/src/app/components/vehicles/vehicles.component.ts" />
       <option value="$PROJECT_DIR$/client/src/app/vehicle-photo/vehicle-photo.component.ts" />
       <option value="$PROJECT_DIR$/api/Data/Models/Vehicle.cs" />
-      <option value="$PROJECT_DIR$/api/Data/ApplicationDBContext.cs" />
       <option value="$PROJECT_DIR$/api/Controllers/VehiclesController.cs" />
       <option value="$PROJECT_DIR$/api/helpers/AutoMapperProfiles.cs" />
-      <option value="$PROJECT_DIR$/api/appsettings.Development.json" />
-      <option value="$PROJECT_DIR$/api/Startup.cs" />
       <option value="$PROJECT_DIR$/api/helpers/PhotoSetting.cs" />
       <option value="$PROJECT_DIR$/client/src/app/components/vehicles/vehicles.component.html" />
       <option value="$PROJECT_DIR$/client/src/app/vehicle-photo/vehicle-photo.component.html" />
@@ -102,6 +86,14 @@
       <option value="$PROJECT_DIR$/client/src/app/components/vehicle-photo/vehicle-photo.component.html" />
       <option value="$PROJECT_DIR$/client/src/app/components/vehicle-photo/vehicle-photo.component.ts" />
       <option value="$PROJECT_DIR$/api/Controllers/PhotosController.cs" />
+      <option value="$PROJECT_DIR$/api/Data/Models/AppUser.cs" />
+      <option value="$PROJECT_DIR$/api/Data/ApplicationDBContext.cs" />
+      <option value="$PROJECT_DIR$/api/Data/Interfaces/ITokenService.cs" />
+      <option value="$PROJECT_DIR$/api/helpers/TokenService.cs" />
+      <option value="$PROJECT_DIR$/api/appsettings.Development.json" />
+      <option value="$PROJECT_DIR$/api/DTOs/UserDto.cs" />
+      <option value="$PROJECT_DIR$/api/Startup.cs" />
+      <option value="$PROJECT_DIR$/api/Controllers/AccountController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1widSmE9tcD6WHtJUtGxE26jNdJ" />
@@ -235,7 +227,7 @@
       <workItem from="1633372227297" duration="3027000" />
       <workItem from="1633375754994" duration="4202000" />
       <workItem from="1633455530677" duration="11482000" />
-      <workItem from="1633598623835" duration="7593000" />
+      <workItem from="1633598623835" duration="19758000" />
     </task>
     <task id="LOCAL-00001" summary="add repository and unit of work">
       <created>1629674981081</created>
