@@ -10,13 +10,16 @@ import {RouterModule, Routes} from "@angular/router";
 import {ToastrModule} from "ngx-toastr";
 import {AppErrorHandler} from "./helpers/appErrorHandler";
 import {VehiclesComponent} from './components/vehicles/vehicles.component';
-import { PaginationComponent } from './components/pagination/pagination.component';
+import {PaginationComponent} from './components/pagination/pagination.component';
+import {VehiclePhotoComponent} from './components/vehicle-photo/vehicle-photo.component';
+import { SpinnerComponent } from './components/spinner/spinner.component';
 
 let routes: Routes = [
   {path: "", redirectTo: 'vehicles', pathMatch: "full"},
   {path: "vehicles", component: VehiclesComponent},
   {path: "vehicle/new", component: VehicleFormComponent},
   {path: "vehicle/:id", component: VehicleFormComponent},
+  {path: "vehicle/:id/photos", component: VehiclePhotoComponent},
   {path: "**", component: VehiclesComponent},
 ]
 
@@ -25,7 +28,9 @@ let routes: Routes = [
     AppComponent,
     VehicleFormComponent,
     VehiclesComponent,
-    PaginationComponent
+    PaginationComponent,
+    VehiclePhotoComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +43,7 @@ let routes: Routes = [
       closeButton: true,
       preventDuplicates: true,
       positionClass: 'toast-bottom-right'
-    })
+    }),
   ],
   providers: [
     {provide: ErrorHandler, useClass: AppErrorHandler}

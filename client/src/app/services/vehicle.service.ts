@@ -44,6 +44,8 @@ export class VehicleService {
     return this.http.delete(`${this.url}/vehicles/${id}`, {observe: "response"});
   }
 
+
+
   setVehicle(serverVehicle: ServerVehicle): Vehicle {
     let vehicle: Vehicle = {
       id: 0,

@@ -4,11 +4,12 @@
       <button (click)="prev()" [class.disabled]="CurrentPage === 1" class="page-link" tabindex="-1">Previous</button>
     </li>
     <li
-        [class.active]="CurrentPage === i + 1"
-      (click)="changePage(i+1)"
-      *ngFor="let page of pages();let i = index" class="page-item"><button class="page-link">{{i + 1}}</button>
+      [class.active]="CurrentPage === i + 1"
+      (click)="changePage(i + 1)"
+      *ngFor="let page of pages();let i = index" class="page-item">
+      <button class="page-link">{{i + 1}}</button>
     </li>
-    <li  class="page-item" [class.disabled]="CurrentPage === PageCount">
+    <li class="page-item" [class.disabled]="CurrentPage === PageCount">
       <button (click)="next()" [class.disabled]="CurrentPage === PageCount" class="page-link">Next</button>
     </li>
   </ul>

@@ -13,6 +13,7 @@ namespace api.helpers
             CreateMap<Make, KeyValuePairDto>();
             CreateMap<Model, KeyValuePairDto>();
             CreateMap<Feature, KeyValuePairDto>();
+            CreateMap<Photo, PhotoDto>();
 
             CreateMap<SaveVehicleDto, Vehicle>()
                 .ForMember(d => d.Id, opt => opt.Ignore())

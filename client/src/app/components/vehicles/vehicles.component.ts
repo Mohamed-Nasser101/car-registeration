@@ -4,8 +4,7 @@ import {VehicleService} from "../../services/vehicle.service";
 import {ToastrService} from "ngx-toastr";
 import {Make} from "../../models/Make";
 import {forkJoin} from "rxjs";
-import {map} from "rxjs/operators";
-import { Query } from '../../models/query';
+import {Query} from '../../models/query';
 
 @Component({
   selector: 'app-vehicles',
@@ -16,7 +15,7 @@ export class VehiclesComponent implements OnInit {
   vehicles: ServerVehicle[];
   makes: Make[];
   pageCount: any;
-  query: Query = { makeId: 0, currentPage: 1, isAscending: true, itemPerPage: 5, sortType: 'make' };
+  query: Query = {makeId: 0, currentPage: 1, isAscending: true, itemPerPage: 3, sortType: 'make'};
 
   constructor(private vehicleService: VehicleService, private toastr: ToastrService) {
   }
@@ -46,9 +45,7 @@ export class VehiclesComponent implements OnInit {
   }
 
   filter() {
-    this.query.currentPage = 1;
     this.vehicleService.getVehicles(this.query)
-      //.pipe(map(vehicle => vehicle.body as ServerVehicle[]))
       .subscribe(data => {
         this.vehicles = data.body as ServerVehicle[];
         this.pageCount = JSON.parse(data.headers.get('pagination') ?? '').pageCount;
@@ -61,8 +58,14 @@ export class VehiclesComponent implements OnInit {
     this.query.sortType = type;
     this.filter();
   }
+
   changePage(page: number) {
     this.query.currentPage = page;
+    this.filter();
+  }
+
+  resetFilter() {
+    this.query.currentPage = 1;
     this.filter();
   }
 }

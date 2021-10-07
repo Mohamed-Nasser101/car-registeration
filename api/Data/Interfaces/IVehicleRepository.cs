@@ -12,5 +12,6 @@ namespace api.Data.Interfaces
         void RemoveVehicle(Vehicle vehicle);
         Task<Vehicle> GetVehicle(int id, bool includeRelated = true);
         Task<PagedList<Vehicle>> GetVehicles(QueryDto query);
+        Task<IEnumerable<PhotoDto>> GetPhotos(int vehicleId);
     }
 }

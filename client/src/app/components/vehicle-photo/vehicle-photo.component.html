@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row my-2">
+    <div class="col-12">
+      <button (click)="fileInput.click()" class="btn btn-info m-2 pull-right">Add Photos <i class="fa fa-plus"></i>
+      </button>
+      <form>
+        <input #fileInput (change)="uploadFiles()" type="file" class="d-none">
+      </form>
+    </div>
+  </div>
+  <div *ngIf="uploading">
+    <div class="progress my-2">
+      <div class="progress-bar" [style.width]="progress+'%'">
+      </div>
+    </div>
+    <button (click)="cancelUpload()" class="btn btn-danger btn-sm pull-right">Cancel</button>
+  </div>
+  <app-spinner *ngIf="loading"></app-spinner>
+  <div *ngIf="!loading" class="row">
+    <div *ngFor="let photo of photos" class="col-3">
+      <img src="https://localhost:5001/uploads/{{photo.name}}" class="img-thumbnail" alt="">
+    </div>
+  </div>
+</div>

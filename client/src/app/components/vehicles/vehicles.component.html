@@ -2,7 +2,7 @@
   <h2>Vehicles</h2>
   <a routerLink="/vehicle/new" class="btn btn-primary m-2">New</a>
   <div style="width: 20%;display: inline-block">
-    <select #m (change)="filter()" [(ngModel)]="query.makeId" name="" class="form-control" id="">
+    <select #m (change)="resetFilter()" [(ngModel)]="query.makeId" name="" class="form-control" id="">
       <option value="0">All</option>
       <option *ngFor="let make of makes" value="{{make.id}}">{{make.name}}</option>
     </select>
@@ -24,15 +24,16 @@
       <td>{{vehicle.model.name}}</td>
       <td>{{vehicle.contact.name}}</td>
       <td>
-        <a href="#" (click)="deleteVehicle($event,vehicle.id)" class="text-danger">delete</a> |
-        <a routerLink="/vehicle/{{vehicle.id}}">view</a></td>
+        <a href="#" (click)="deleteVehicle($event,vehicle.id)" class="badge badge-danger">delete</a> |
+        <a routerLink="/vehicle/{{vehicle.id}}" class="badge badge-secondary">view</a> |
+        <a routerLink="/vehicle/{{vehicle.id}}/photos" class="badge badge-warning">Photos</a>
+      </td>
     </tr>
     </tbody>
   </table>
   <app-pagination
-                  [PageCount]="pageCount"
-                  [CurrentPage]="this.query.currentPage"
-                  (pageChanged)="changePage($event)">
-
+    [PageCount]="pageCount"
+    [CurrentPage]="this.query.currentPage"
+    (pageChanged)="changePage($event)">
   </app-pagination>
 </div>

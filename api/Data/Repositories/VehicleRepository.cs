@@ -8,6 +8,7 @@ using api.Data.Models;
 using api.DTOs;
 using api.Extensions;
 using api.helpers;
+using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,10 +17,12 @@ namespace api.Data.Repositories
     public class VehicleRepository : IVehicleRepository
     {
         private readonly ApplicationDBContext _context;
+        private readonly IMapper _mapper;
 
-        public VehicleRepository(ApplicationDBContext context)
+        public VehicleRepository(ApplicationDBContext context,IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
         public async Task<Vehicle> GetVehicle(int id, bool includeRelated = true)
@@ -62,6 +65,13 @@ namespace api.Data.Repositories
         public void RemoveVehicle(Vehicle vehicle)
         {
             _context.Vehicles.Remove(vehicle);
+        }
+
+        public async Task<IEnumerable<PhotoDto>> GetPhotos(int vehicleId)
+        {
+            return await _context.Photos.Where(p => p.VehicleId == vehicleId)
+                .ProjectTo<PhotoDto>(_mapper.ConfigurationProvider)
+                .ToListAsync();
         }
     }
 }

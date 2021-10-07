@@ -289,7 +289,7 @@
     </schema>
     <schema id="56" parent="15" name="dbo">
       <ObjectId>1</ObjectId>
-      <IntrospectionTimestamp>2021-09-18.02:59:11.943</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2021-10-04.22:49:47.497</IntrospectionTimestamp>
       <Current>1</Current>
     </schema>
     <schema id="57" parent="15" name="guest">
@@ -392,39 +392,44 @@
       <CreatedTimestamp>2021-08-12.19:12:54.487</CreatedTimestamp>
       <ModifiedTimestamp>2021-08-13.20:08:19.990</ModifiedTimestamp>
     </table>
-    <table id="76" parent="56" name="VehicleFeature">
+    <table id="76" parent="56" name="Photos">
+      <ObjectId>18099105</ObjectId>
+      <CreatedTimestamp>2021-10-04.22:49:14.047</CreatedTimestamp>
+      <ModifiedTimestamp>2021-10-04.22:49:14.073</ModifiedTimestamp>
+    </table>
+    <table id="77" parent="56" name="VehicleFeature">
       <ObjectId>1893581784</ObjectId>
       <CreatedTimestamp>2021-08-13.20:08:19.993</CreatedTimestamp>
       <ModifiedTimestamp>2021-08-13.20:08:20.007</ModifiedTimestamp>
     </table>
-    <table id="77" parent="56" name="Vehicles">
+    <table id="78" parent="56" name="Vehicles">
       <ObjectId>1845581613</ObjectId>
       <CreatedTimestamp>2021-08-13.20:08:19.977</CreatedTimestamp>
-      <ModifiedTimestamp>2021-08-13.20:08:20.010</ModifiedTimestamp>
+      <ModifiedTimestamp>2021-10-04.22:49:14.060</ModifiedTimestamp>
     </table>
-    <table id="78" parent="56" name="__EFMigrationsHistory">
+    <table id="79" parent="56" name="__EFMigrationsHistory">
       <ObjectId>1205579333</ObjectId>
       <CreatedTimestamp>2021-08-12.16:27:47.757</CreatedTimestamp>
       <ModifiedTimestamp>2021-08-12.16:27:47.757</ModifiedTimestamp>
     </table>
-    <column id="79" parent="73" name="Id">
+    <column id="80" parent="73" name="Id">
       <Position>1</Position>
       <SequenceIdentity>1(1002)</SequenceIdentity>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="80" parent="73" name="Name">
+    <column id="81" parent="73" name="Name">
       <Position>2</Position>
       <DataType>nvarchar(255 char)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="81" parent="73" name="PK_Features">
+    <index id="82" parent="73" name="PK_Features">
       <Position>1</Position>
       <ColNames>Id</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <key id="82" parent="73" name="PK_Features">
+    <key id="83" parent="73" name="PK_Features">
       <ObjectId>1621580815</ObjectId>
       <CreatedTimestamp>2021-08-12.21:45:43.060</CreatedTimestamp>
       <ModifiedTimestamp>2021-08-12.21:45:43.060</ModifiedTimestamp>
@@ -432,24 +437,24 @@
       <UnderlyingIndexName>PK_Features</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="83" parent="74" name="Id">
+    <column id="84" parent="74" name="Id">
       <Position>1</Position>
       <SequenceIdentity>1(1002)</SequenceIdentity>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="84" parent="74" name="Name">
+    <column id="85" parent="74" name="Name">
       <Position>2</Position>
       <DataType>nvarchar(255 char)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="85" parent="74" name="PK_Makes">
+    <index id="86" parent="74" name="PK_Makes">
       <Position>1</Position>
       <ColNames>Id</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <key id="86" parent="74" name="PK_Makes">
+    <key id="87" parent="74" name="PK_Makes">
       <ObjectId>1541580530</ObjectId>
       <CreatedTimestamp>2021-08-12.19:12:54.480</CreatedTimestamp>
       <ModifiedTimestamp>2021-08-12.19:12:54.480</ModifiedTimestamp>
@@ -457,33 +462,33 @@
       <UnderlyingIndexName>PK_Makes</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="87" parent="75" name="Id">
+    <column id="88" parent="75" name="Id">
       <Position>1</Position>
       <SequenceIdentity>1(1002)</SequenceIdentity>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="88" parent="75" name="Name">
+    <column id="89" parent="75" name="Name">
       <Position>2</Position>
       <DataType>nvarchar(255 char)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="89" parent="75" name="MakeId">
+    <column id="90" parent="75" name="MakeId">
       <Position>3</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="90" parent="75" name="PK_Models">
+    <index id="91" parent="75" name="PK_Models">
       <Position>1</Position>
       <ColNames>Id</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <index id="91" parent="75" name="IX_Models_MakeId">
+    <index id="92" parent="75" name="IX_Models_MakeId">
       <Position>2</Position>
       <ColNames>MakeId</ColNames>
     </index>
-    <key id="92" parent="75" name="PK_Models">
+    <key id="93" parent="75" name="PK_Models">
       <ObjectId>1573580644</ObjectId>
       <CreatedTimestamp>2021-08-12.19:12:54.490</CreatedTimestamp>
       <ModifiedTimestamp>2021-08-12.19:12:54.490</ModifiedTimestamp>
@@ -491,7 +496,7 @@
       <UnderlyingIndexName>PK_Models</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="93" parent="75" name="FK_Models_Makes_MakeId">
+    <foreign-key id="94" parent="75" name="FK_Models_Makes_MakeId">
       <ObjectId>1589580701</ObjectId>
       <CreatedTimestamp>2021-08-12.19:12:54.493</CreatedTimestamp>
       <ModifiedTimestamp>2021-08-12.19:12:54.493</ModifiedTimestamp>
@@ -502,28 +507,77 @@
       <RefColNames>Id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="94" parent="76" name="VehicleId">
+    <column id="95" parent="76" name="Id">
       <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="95" parent="76" name="FeatureId">
+    <column id="96" parent="76" name="VehicleId">
       <Position>2</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="96" parent="76" name="PK_VehicleFeature">
+    <column id="97" parent="76" name="Name">
+      <Position>3</Position>
+      <DataType>nvarchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="98" parent="76" name="Url">
+      <Position>4</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+    </column>
+    <index id="99" parent="76" name="PK_Photos">
+      <Position>1</Position>
+      <ColNames>Id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="100" parent="76" name="IX_Photos_VehicleId">
+      <Position>2</Position>
+      <ColNames>VehicleId</ColNames>
+    </index>
+    <key id="101" parent="76" name="PK_Photos">
+      <ObjectId>34099162</ObjectId>
+      <CreatedTimestamp>2021-10-04.22:49:14.053</CreatedTimestamp>
+      <ModifiedTimestamp>2021-10-04.22:49:14.053</ModifiedTimestamp>
+      <ColNames>Id</ColNames>
+      <UnderlyingIndexName>PK_Photos</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="102" parent="76" name="FK_Photos_Vehicles_VehicleId">
+      <ObjectId>50099219</ObjectId>
+      <CreatedTimestamp>2021-10-04.22:49:14.053</CreatedTimestamp>
+      <ModifiedTimestamp>2021-10-04.22:49:14.053</ModifiedTimestamp>
+      <ColNames>VehicleId</ColNames>
+      <RefTableId>1845581613</RefTableId>
+      <RefTableName>Vehicles</RefTableName>
+      <RefKeyName>PK_Vehicles</RefKeyName>
+      <RefColNames>Id</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="103" parent="77" name="VehicleId">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="104" parent="77" name="FeatureId">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="105" parent="77" name="PK_VehicleFeature">
       <Position>1</Position>
       <ColNames>FeatureId
 VehicleId</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <index id="97" parent="76" name="IX_VehicleFeature_VehicleId">
+    <index id="106" parent="77" name="IX_VehicleFeature_VehicleId">
       <Position>2</Position>
       <ColNames>VehicleId</ColNames>
     </index>
-    <key id="98" parent="76" name="PK_VehicleFeature">
+    <key id="107" parent="77" name="PK_VehicleFeature">
       <ObjectId>1909581841</ObjectId>
       <CreatedTimestamp>2021-08-13.20:08:19.997</CreatedTimestamp>
       <ModifiedTimestamp>2021-08-13.20:08:19.997</ModifiedTimestamp>
@@ -532,7 +586,7 @@ VehicleId</ColNames>
       <UnderlyingIndexName>PK_VehicleFeature</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="99" parent="76" name="FK_VehicleFeature_Vehicles_VehicleId">
+    <foreign-key id="108" parent="77" name="FK_VehicleFeature_Vehicles_VehicleId">
       <ObjectId>1941581955</ObjectId>
       <CreatedTimestamp>2021-08-13.20:08:20</CreatedTimestamp>
       <ModifiedTimestamp>2021-08-13.20:08:20</ModifiedTimestamp>
@@ -543,7 +597,7 @@ VehicleId</ColNames>
       <RefColNames>Id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="100" parent="76" name="FK_VehicleFeature_Features_FeatureId">
+    <foreign-key id="109" parent="77" name="FK_VehicleFeature_Features_FeatureId">
       <ObjectId>1925581898</ObjectId>
       <CreatedTimestamp>2021-08-13.20:08:19.997</CreatedTimestamp>
       <ModifiedTimestamp>2021-08-13.20:08:19.997</ModifiedTimestamp>
@@ -554,52 +608,52 @@ VehicleId</ColNames>
       <RefColNames>Id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="101" parent="77" name="Id">
+    <column id="110" parent="78" name="Id">
       <Position>1</Position>
-      <SequenceIdentity>1(7)</SequenceIdentity>
+      <SequenceIdentity>1(2002)</SequenceIdentity>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="102" parent="77" name="ModelId">
+    <column id="111" parent="78" name="ModelId">
       <Position>2</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="103" parent="77" name="IsRegistered">
+    <column id="112" parent="78" name="IsRegistered">
       <Position>3</Position>
       <DataType>bit|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="104" parent="77" name="ContactName">
+    <column id="113" parent="78" name="ContactName">
       <Position>4</Position>
       <DataType>nvarchar(255 char)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="105" parent="77" name="ContactEmail">
+    <column id="114" parent="78" name="ContactEmail">
       <Position>5</Position>
       <DataType>nvarchar(255 char)|0s</DataType>
     </column>
-    <column id="106" parent="77" name="ContacPhone">
+    <column id="115" parent="78" name="ContacPhone">
       <Position>6</Position>
       <DataType>nvarchar(255 char)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="107" parent="77" name="LastUpdate">
+    <column id="116" parent="78" name="LastUpdate">
       <Position>7</Position>
       <DataType>datetime2|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="108" parent="77" name="PK_Vehicles">
+    <index id="117" parent="78" name="PK_Vehicles">
       <Position>1</Position>
       <ColNames>Id</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <index id="109" parent="77" name="IX_Vehicles_ModelId">
+    <index id="118" parent="78" name="IX_Vehicles_ModelId">
       <Position>2</Position>
       <ColNames>ModelId</ColNames>
     </index>
-    <key id="110" parent="77" name="PK_Vehicles">
+    <key id="119" parent="78" name="PK_Vehicles">
       <ObjectId>1861581670</ObjectId>
       <CreatedTimestamp>2021-08-13.20:08:19.987</CreatedTimestamp>
       <ModifiedTimestamp>2021-08-13.20:08:19.987</ModifiedTimestamp>
@@ -607,7 +661,7 @@ VehicleId</ColNames>
       <UnderlyingIndexName>PK_Vehicles</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="111" parent="77" name="FK_Vehicles_Models_ModelId">
+    <foreign-key id="120" parent="78" name="FK_Vehicles_Models_ModelId">
       <ObjectId>1877581727</ObjectId>
       <CreatedTimestamp>2021-08-13.20:08:19.990</CreatedTimestamp>
       <ModifiedTimestamp>2021-08-13.20:08:19.990</ModifiedTimestamp>
@@ -618,23 +672,23 @@ VehicleId</ColNames>
       <RefColNames>Id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="112" parent="78" name="MigrationId">
+    <column id="121" parent="79" name="MigrationId">
       <Position>1</Position>
       <DataType>nvarchar(150 char)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="113" parent="78" name="ProductVersion">
+    <column id="122" parent="79" name="ProductVersion">
       <Position>2</Position>
       <DataType>nvarchar(32 char)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="114" parent="78" name="PK___EFMigrationsHistory">
+    <index id="123" parent="79" name="PK___EFMigrationsHistory">
       <Position>1</Position>
       <ColNames>MigrationId</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <key id="115" parent="78" name="PK___EFMigrationsHistory">
+    <key id="124" parent="79" name="PK___EFMigrationsHistory">
       <ObjectId>1221579390</ObjectId>
       <CreatedTimestamp>2021-08-12.16:27:47.767</CreatedTimestamp>
       <ModifiedTimestamp>2021-08-12.16:27:47.767</ModifiedTimestamp>
