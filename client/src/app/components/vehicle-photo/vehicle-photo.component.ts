@@ -3,8 +3,10 @@ import {ActivatedRoute} from "@angular/router";
 import {PhotoService} from "../../services/photo.service";
 import {Photo} from "../../models/photo";
 import {HttpEventType} from "@angular/common/http";
-import {Subscription} from "rxjs";
+import {Observable, Subscription} from "rxjs";
 import {ToastrService} from "ngx-toastr";
+import {User} from "../../models/user";
+import {UserService} from "../../services/user.service";
 
 @Component({
   selector: 'app-vehicle-photo',
@@ -20,7 +22,8 @@ export class VehiclePhotoComponent implements OnInit {
   uploading = false;
   uploadSubscription: Subscription;
 
-  constructor(private photoService: PhotoService, private route: ActivatedRoute, private toastr: ToastrService) {
+  constructor(private photoService: PhotoService, private route: ActivatedRoute, private toastr: ToastrService,
+              public userService: UserService) {
   }
 
   ngOnInit(): void {

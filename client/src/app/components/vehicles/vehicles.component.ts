@@ -5,6 +5,7 @@ import {ToastrService} from "ngx-toastr";
 import {Make} from "../../models/Make";
 import {forkJoin} from "rxjs";
 import {Query} from '../../models/query';
+import {UserService} from "../../services/user.service";
 
 @Component({
   selector: 'app-vehicles',
@@ -17,7 +18,7 @@ export class VehiclesComponent implements OnInit {
   pageCount: any;
   query: Query = {makeId: 0, currentPage: 1, isAscending: true, itemPerPage: 3, sortType: 'make'};
 
-  constructor(private vehicleService: VehicleService, private toastr: ToastrService) {
+  constructor(private vehicleService: VehicleService, private toastr: ToastrService, public userService: UserService) {
   }
 
   ngOnInit(): void {

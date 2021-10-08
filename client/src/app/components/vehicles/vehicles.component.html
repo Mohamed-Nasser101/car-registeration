@@ -24,7 +24,8 @@
       <td>{{vehicle.model.name}}</td>
       <td>{{vehicle.contact.name}}</td>
       <td>
-        <a href="#" (click)="deleteVehicle($event,vehicle.id)" class="badge badge-danger">delete</a> |
+        <a *ngIf="userService.user$|async" href="#" (click)="deleteVehicle($event,vehicle.id)"
+           class="badge badge-danger">delete</a><span *ngIf="userService.user$|async"> | </span>
         <a routerLink="/vehicle/{{vehicle.id}}" class="badge badge-secondary">view</a> |
         <a routerLink="/vehicle/{{vehicle.id}}/photos" class="badge badge-warning">Photos</a>
       </td>

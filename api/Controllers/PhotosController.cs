@@ -7,6 +7,7 @@ using api.Data.Models;
 using api.DTOs;
 using api.helpers;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -15,6 +16,7 @@ using Microsoft.Extensions.Options;
 namespace api.Controllers
 {
     [Route("api/vehicles/{vehicleId}/photos")]
+    [Authorize]
     public class PhotosController : BaseApiController
     {
         private readonly IWebHostEnvironment _host;
@@ -62,6 +64,7 @@ namespace api.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public async Task<ActionResult> GetPhotos(int vehicleId)
         {
             var photos = await _vehicleRepository.GetPhotos(vehicleId);

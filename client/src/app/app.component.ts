@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
+import {UserService} from "./services/user.service";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'client';
+
+  constructor(public userService: UserService) {
+  }
+
+  logout(e: Event) {
+    e.preventDefault();
+    this.userService.logout();
+  }
 }

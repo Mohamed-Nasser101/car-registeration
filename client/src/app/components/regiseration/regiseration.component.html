@@ -1,0 +1,81 @@
+<section class="vh-100 bg-image my-2" style="background-image: url('/assets/img4.jpg');">
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body p-5">
+              <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+
+              <form #f="ngForm" (ngSubmit)="register()">
+                <div class="form-outline mb-4">
+                  <input #username="ngModel" required [(ngModel)]="registerModel.username" name="username" type="text"
+                         id="form3Example1cg"
+                         class="form-control form-control-lg"
+                         [class.is-invalid]="username.invalid && username.touched"/>
+                  <div *ngIf="username.invalid && username.touched && username.errors?.required"
+                       class="invalid-feedback">Name is required.
+                  </div>
+                  <div *ngIf="username.invalid && username.touched && username.errors?.minlength"
+                       class="invalid-feedback">Name must be at least 4 characters long.
+                  </div>
+                  <label class="form-label" for="form3Example1cg">Your Name</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input #email="ngModel" required email [(ngModel)]="registerModel.email" name="email" type="email"
+                         id="form3Example3cg"
+                         class="form-control form-control-lg"
+                         [class.is-invalid]="email.invalid && email.touched"/>
+                  <div *ngIf="email.invalid && email.touched && email.errors?.required"
+                       class="invalid-feedback">Email is required.
+                  </div>
+                  <div *ngIf="email.invalid && email.touched && email.errors?.email"
+                       class="invalid-feedback">It's not a valid email.
+                  </div>
+                  <label class="form-label" for="form3Example3cg">Your Email</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input #password="ngModel" required minlength="4" [(ngModel)]="registerModel.password" name="password"
+                         type="password" id="form3Example4cg" class="form-control form-control-lg"
+                         [class.is-invalid]="password.invalid && password.touched"/>
+                  <div *ngIf="password.invalid && password.touched && password.errors?.minlength"
+                       class="invalid-feedback">Name must be at least 4 characters long.
+                  </div>
+                  <div *ngIf="password.invalid && password.touched && password.errors?.required"
+                       class="invalid-feedback">Password is required.
+                  </div>
+                  <label class="form-label" for="form3Example4cg">Password</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input #confirmPassword="ngModel" required [appConfirmPassword]="registerModel.password"
+                         name="confirmPassword" ngModel type="password" id="form3Example4cdg"
+                         class="form-control form-control-lg"
+                         [class.is-invalid]="confirmPassword.invalid && confirmPassword.touched"/>
+                  <div *ngIf="confirmPassword.invalid && confirmPassword.touched && confirmPassword.errors?.required"
+                       class="invalid-feedback">ConfirmPassword is required.
+                  </div>
+                  <div *ngIf="confirmPassword.invalid && confirmPassword.touched && confirmPassword.errors?.notMatch"
+                       class="invalid-feedback">Confirm password doesn't match password.
+                  </div>
+                  <label class="form-label" for="form3Example4cdg">Repeat your password</label>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button [disabled]="f.invalid" type="submit"
+                          class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register
+                  </button>
+                </div>
+                <p class="text-center text-muted mt-5 mb-0">Have already an account?
+                  <a routerLink="/login" class="fw-bold text-body"><u>Login here</u></a>
+                </p>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

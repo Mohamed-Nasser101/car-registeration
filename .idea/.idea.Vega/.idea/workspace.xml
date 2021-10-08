@@ -6,14 +6,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27e55c39-cbc3-4ce5-a346-88531e1390e9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/dataSources/0f1d69e3-4148-4508-84bb-19ce49d947ee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/dataSources/0f1d69e3-4148-4508-84bb-19ce49d947ee.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/dataSources/0f1d69e3-4148-4508-84bb-19ce49d947ee/storage_v2/_src_/database/Vega.6Z8oAA/schema/dbo.sYMBAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/dataSources/0f1d69e3-4148-4508-84bb-19ce49d947ee/storage_v2/_src_/database/Vega.6Z8oAA/schema/dbo.sYMBAA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/Data/ApplicationDBContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Data/ApplicationDBContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/Migrations/ApplicationDBContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Migrations/ApplicationDBContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/api/api.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Controllers/AccountController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/Controllers/PhotosController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Controllers/PhotosController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/Controllers/VehiclesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Controllers/VehiclesController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/vehicle-photo/vehicle-photo.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/vehicle-photo/vehicle-photo.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/vehicle-photo/vehicle-photo.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/vehicle-photo/vehicle-photo.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/vehicles/vehicles.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/vehicles/vehicles.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/vehicles/vehicles.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/vehicles/vehicles.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,34 +47,12 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/api/Data/Repositories/UnitOfWork.cs" />
-      <option value="$PROJECT_DIR$/client/src/app/models/contact.ts" />
-      <option value="$PROJECT_DIR$/client/src/environments/environment.prod.ts" />
-      <option value="$PROJECT_DIR$/client/src/app/helpers/appErrorHandler.ts" />
-      <option value="$PROJECT_DIR$/client/angular.json" />
-      <option value="$PROJECT_DIR$/client/src/app/models/vehicle.ts" />
-      <option value="$PROJECT_DIR$/client/src/app/components/vehicle-form/vehicle-form.component.html" />
-      <option value="$PROJECT_DIR$/client/src/app/components/vehicle-form/NewFile1.js" />
-      <option value="$PROJECT_DIR$/client/src/app/app.component.html" />
-      <option value="$PROJECT_DIR$/client/src/app/components/vehicle-form/vehicle-form.component.ts" />
-      <option value="$PROJECT_DIR$/api/helpers/PagedList.cs" />
-      <option value="$PROJECT_DIR$/client/src/app/components/pagination/pagination.component.ts" />
-      <option value="$PROJECT_DIR$/api/Extensions/IQeurableExtension.cs" />
-      <option value="$PROJECT_DIR$/api/Extensions/IQueryableExtension.cs" />
-      <option value="$PROJECT_DIR$/api/Data/Interfaces/ISortQuery.cs" />
-      <option value="$PROJECT_DIR$/api/DTOs/QueryDto.cs" />
-      <option value="$PROJECT_DIR$/api/Extensions/QueryableExtension.cs" />
-      <option value="$PROJECT_DIR$/client/src/app/models/query.ts" />
-      <option value="$USER_HOME$/.ideavimrc" />
       <option value="$USER_HOME$/Desktop/nn/New folder/Startup.cs" />
       <option value="$PROJECT_DIR$/client/src/app/components/pagination/pagination.component.html" />
-      <option value="$PROJECT_DIR$/client/src/app/components/vehicles/vehicles.component.ts" />
       <option value="$PROJECT_DIR$/client/src/app/vehicle-photo/vehicle-photo.component.ts" />
       <option value="$PROJECT_DIR$/api/Data/Models/Vehicle.cs" />
-      <option value="$PROJECT_DIR$/api/Controllers/VehiclesController.cs" />
       <option value="$PROJECT_DIR$/api/helpers/AutoMapperProfiles.cs" />
       <option value="$PROJECT_DIR$/api/helpers/PhotoSetting.cs" />
-      <option value="$PROJECT_DIR$/client/src/app/components/vehicles/vehicles.component.html" />
       <option value="$PROJECT_DIR$/client/src/app/vehicle-photo/vehicle-photo.component.html" />
       <option value="$PROJECT_DIR$/client/src/app/services/vehicle.service.ts" />
       <option value="$PROJECT_DIR$/api/Data/Repositories/VehicleRepository.cs" />
@@ -81,11 +63,7 @@
       <option value="$PROJECT_DIR$/client/src/app/services/photo.service.ts" />
       <option value="$PROJECT_DIR$/client/src/app/src/app/components/spinner/spinner.component.css" />
       <option value="$PROJECT_DIR$/client/src/app/src/app/components/spinner/spinner.component.html" />
-      <option value="$PROJECT_DIR$/client/src/app/app.module.ts" />
       <option value="$PROJECT_DIR$/client/src/app/components/spinner/spinner.component.css" />
-      <option value="$PROJECT_DIR$/client/src/app/components/vehicle-photo/vehicle-photo.component.html" />
-      <option value="$PROJECT_DIR$/client/src/app/components/vehicle-photo/vehicle-photo.component.ts" />
-      <option value="$PROJECT_DIR$/api/Controllers/PhotosController.cs" />
       <option value="$PROJECT_DIR$/api/Data/Models/AppUser.cs" />
       <option value="$PROJECT_DIR$/api/Data/ApplicationDBContext.cs" />
       <option value="$PROJECT_DIR$/api/Data/Interfaces/ITokenService.cs" />
@@ -93,7 +71,33 @@
       <option value="$PROJECT_DIR$/api/appsettings.Development.json" />
       <option value="$PROJECT_DIR$/api/DTOs/UserDto.cs" />
       <option value="$PROJECT_DIR$/api/Startup.cs" />
+      <option value="$PROJECT_DIR$/api/Controllers/FeaturesController.cs" />
+      <option value="$PROJECT_DIR$/client/src/app/components/regiseration/regiseration.component.css" />
+      <option value="$PROJECT_DIR$/client/src/app/components/login/login.component.css" />
+      <option value="$PROJECT_DIR$/client/src/app/directives/confirm-password.directive.ts" />
+      <option value="$PROJECT_DIR$/client/src/app/components/regiseration/regiseration.component.html" />
+      <option value="$PROJECT_DIR$/client/src/app/components/regiseration/regiseration.component.ts" />
+      <option value="$PROJECT_DIR$/client/src/app/models/registerModel.ts" />
+      <option value="$PROJECT_DIR$/client/src/app/models/user.ts" />
+      <option value="$PROJECT_DIR$/client/src/app/models/loginModel.ts" />
+      <option value="$PROJECT_DIR$/client/src/app/services/user.service.ts" />
+      <option value="$PROJECT_DIR$/client/src/app/components/login/login.component.html" />
+      <option value="$PROJECT_DIR$/api/DTOs/Register.cs" />
+      <option value="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" />
+      <option value="$APPLICATION_CONFIG_DIR$/scratches/rest-api_1.http" />
       <option value="$PROJECT_DIR$/api/Controllers/AccountController.cs" />
+      <option value="$PROJECT_DIR$/client/src/app/components/login/login.component.ts" />
+      <option value="$PROJECT_DIR$/api/Controllers/VehiclesController.cs" />
+      <option value="$PROJECT_DIR$/api/Controllers/PhotosController.cs" />
+      <option value="$PROJECT_DIR$/client/src/app/components/vehicle-photo/vehicle-photo.component.html" />
+      <option value="$PROJECT_DIR$/client/src/app/components/vehicle-photo/vehicle-photo.component.ts" />
+      <option value="$PROJECT_DIR$/client/src/app/components/vehicles/vehicles.component.ts" />
+      <option value="$PROJECT_DIR$/client/src/app/components/vehicles/vehicles.component.html" />
+      <option value="$PROJECT_DIR$/client/src/app/app.component.css" />
+      <option value="$PROJECT_DIR$/client/src/app/app.component.html" />
+      <option value="$PROJECT_DIR$/client/src/app/app.component.ts" />
+      <option value="$PROJECT_DIR$/client/src/app/app.module.ts" />
+      <option value="$PROJECT_DIR$/client/src/app/interceptors/authenticate.interceptor.ts" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1widSmE9tcD6WHtJUtGxE26jNdJ" />
@@ -114,9 +118,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Users\fg_dell\source\repos\Vega\client\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="es6.move.members.recent.items">
+      <recent name="C:\Users\fg_dell\source\repos\Vega\client\src\app\models\loginModel.ts" />
+    </key>
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.api: IIS Express">
     <configuration default="true" type="DotNetProject" factoryName=".NET Project">
@@ -227,7 +236,14 @@
       <workItem from="1633372227297" duration="3027000" />
       <workItem from="1633375754994" duration="4202000" />
       <workItem from="1633455530677" duration="11482000" />
-      <workItem from="1633598623835" duration="19758000" />
+      <workItem from="1633598623835" duration="20911000" />
+      <workItem from="1633628753441" duration="321000" />
+      <workItem from="1633629629656" duration="3141000" />
+      <workItem from="1633638356573" duration="7984000" />
+      <workItem from="1633679610921" duration="792000" />
+      <workItem from="1633680486155" duration="3161000" />
+      <workItem from="1633684243494" duration="357000" />
+      <workItem from="1633692119404" duration="3759000" />
     </task>
     <task id="LOCAL-00001" summary="add repository and unit of work">
       <created>1629674981081</created>
@@ -243,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629675018032</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add identity authorization setup">
+      <created>1633625596105</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1633625596105</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,7 +288,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="add repository and unit of work" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="add identity authorization setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="add identity authorization setup" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

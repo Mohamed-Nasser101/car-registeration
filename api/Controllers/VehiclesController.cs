@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace api.Controllers
 {
+    [Authorize]
     public class VehiclesController : BaseApiController
     {
         private readonly IMapper _mapper;
@@ -63,6 +65,7 @@ namespace api.Controllers
         }
 
         [HttpGet("{id}")]
+        [AllowAnonymous]
         public async Task<ActionResult> GetVehicle(int id)
         {
             var vehicle = await _vehicleRepository.GetVehicle(id);
@@ -73,6 +76,7 @@ namespace api.Controllers
         }
         
         [HttpGet]
+        [AllowAnonymous]
         public async Task<ActionResult> GetVehicles([FromQuery] QueryDto query)
         {
             var vehicles = await _vehicleRepository.GetVehicles(query);

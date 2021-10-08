@@ -21,16 +21,16 @@ namespace api.Controllers
         }
 
         [HttpPost("register")]
-        public async Task<ActionResult> Register(string username, string email, string password)
+        public async Task<ActionResult> Register([FromBody] Register model)
         {
             var user = new IdentityUser
             {
-                UserName = username,
-                Email = email
+                UserName = model.Username,
+                Email = model.Email
             };
-            var result = await _userManager.CreateAsync(user, password);
+            var result = await _userManager.CreateAsync(user, model.Password);
             if (!result.Succeeded) return BadRequest(result.Errors);
-            
+
             var token = await _tokenService.CreateToken(user);
             var userDto = new UserDto
             {
@@ -41,11 +41,11 @@ namespace api.Controllers
         }
 
         [HttpPost("login")]
-        public async Task<ActionResult> Login(string username, string password)
+        public async Task<ActionResult> Login([FromBody] Login model)
         {
-            var user = await _userManager.FindByNameAsync(username);
+            var user = await _userManager.FindByNameAsync(model.Username);
             if (user == null) return NotFound();
-            var result = await _signInManager.CheckPasswordSignInAsync(user, password, false);
+            var result = await _signInManager.CheckPasswordSignInAsync(user, model.Password, false);
             if (!result.Succeeded) return Unauthorized();
             var token = await _tokenService.CreateToken(user);
             var userDto = new UserDto
