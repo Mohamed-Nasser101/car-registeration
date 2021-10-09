@@ -15,7 +15,7 @@ import {VehiclePhotoComponent} from './components/vehicle-photo/vehicle-photo.co
 import {SpinnerComponent} from './components/spinner/spinner.component';
 import {RegiserationComponent} from './components/regiseration/regiseration.component';
 import {LoginComponent} from './components/login/login.component';
-import {ConfirmPasswordDirective} from './directives/confirm-password.directive';
+import {ConfirmPasswordDirective} from './directives/validators/confirm-password.directive';
 import {AuthenticateInterceptor} from "./interceptors/authenticate.interceptor";
 
 let routes: Routes = [

@@ -47,7 +47,6 @@ export class VehicleFormComponent implements OnInit {
         this.SelectMake(this.serverVehicle.make.id.toString());
       }
     });
-
   }
 
   SelectMake(index: string) {

@@ -6,18 +6,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27e55c39-cbc3-4ce5-a346-88531e1390e9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/dataSources/0f1d69e3-4148-4508-84bb-19ce49d947ee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/dataSources/0f1d69e3-4148-4508-84bb-19ce49d947ee.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/dataSources/0f1d69e3-4148-4508-84bb-19ce49d947ee/storage_v2/_src_/database/Vega.6Z8oAA/schema/dbo.sYMBAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/dataSources/0f1d69e3-4148-4508-84bb-19ce49d947ee/storage_v2/_src_/database/Vega.6Z8oAA/schema/dbo.sYMBAA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vega/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Controllers/AccountController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/Controllers/PhotosController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Controllers/PhotosController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/Controllers/VehiclesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Controllers/VehiclesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/Extensions/HttpExenstion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Extensions/HttpExenstion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/10e26058-f4ba-40a7-8ce2-8a770326b40d.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/2a05c5aa-d72b-43a7-bdea-a75664c0a249.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/2cafc950-db6e-430f-9872-ed19d915947a.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/3162ecaa-15e1-494d-9ee2-85818c45b392.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/3561b0d8-581d-4a75-9d9d-f31ebc7ecc74.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/35e2f1a3-3d97-4311-912e-3ac5f8f01b54.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/40312693-6f56-48c6-a97b-529b828b9c9f.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/496bb735-d477-4176-be56-83c9e141c84f.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/4ce5dd25-f4ec-42a2-8d03-56f2316d6d19.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/5591984f-d497-47e4-8cf2-7d74f894a695.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/5deafdd9-e005-4b81-8f01-d7dd360127dc.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/6c01f3c4-bb6b-4302-a01d-92b3630a7067.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/71d85b0a-f94f-4f35-a268-443dede17d90.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/77451cf8-b4d4-4151-8204-36bf415b3f10.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/80af051f-66a6-4922-908a-2725b4914f35.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/82b4c217-e1dc-4cd3-8e06-61680a89e4a8.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/8e74137d-c218-4a47-b06e-ad3861843a7e.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/9a122d54-130c-482c-af44-9f8dcb4ffd3f.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/9b70b339-09f0-4449-bf47-7ba0b7d62115.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/9fcd03c8-628c-46d5-b8ac-5a62916fd683.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/a0318069-307f-417f-9c5b-20a4a44c3c24.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/b0c3bacd-bd65-4f41-8ffc-6ac434734577.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/b1405171-e1bb-464a-ab22-597985f53e83.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/b6d36d34-737a-4686-ad19-b4b30e4750cc.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/c0fe03b5-3038-4e1f-a765-2286051d3adf.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/d0e30888-948b-46b2-90fc-a8d2ca72b1e0.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/ed916899-01b7-486a-9090-a5ad485c3247.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/ed96a7a0-bc7f-4b74-a0b0-62baa34f8f54.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/f0bc9fba-45d7-45cf-838f-77e573cf471b.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/f80fc53a-b086-475e-b967-5dfe2c10485b.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/fb52aa5a-87ac-4492-b25a-201b82094192.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/wwwroot/uploads/ffe8ec41-98bf-4d55-a0ec-b3ea895944d3.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/angular.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/components/vehicle-photo/vehicle-photo.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/vehicle-photo/vehicle-photo.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/components/vehicle-photo/vehicle-photo.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/vehicle-photo/vehicle-photo.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/components/vehicles/vehicles.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/vehicles/vehicles.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/components/vehicles/vehicles.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/vehicles/vehicles.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/vehicle-form/vehicle-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/vehicle-form/vehicle-form.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/directives/confirm-password.directive.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/directives/validators/confirm-password.directive.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,10 +75,14 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://D:/courses/C#/chat app asp core &amp; angular/CoreApp/DatingApp/API/DTOs/UserDto.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/client/src/app/app.component.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/client/src/app/services/user.service.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/client/src/app/interceptors/authenticate.interceptor.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/client/src/app/app.module.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/client/src/app/components/vehicle-form/vehicle-form.component.html" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$USER_HOME$/Desktop/nn/New folder/Startup.cs" />
       <option value="$PROJECT_DIR$/client/src/app/components/pagination/pagination.component.html" />
       <option value="$PROJECT_DIR$/client/src/app/vehicle-photo/vehicle-photo.component.ts" />
       <option value="$PROJECT_DIR$/api/Data/Models/Vehicle.cs" />
@@ -94,11 +129,16 @@
       <option value="$PROJECT_DIR$/client/src/app/components/vehicles/vehicles.component.ts" />
       <option value="$PROJECT_DIR$/client/src/app/components/vehicles/vehicles.component.html" />
       <option value="$PROJECT_DIR$/client/src/app/app.component.css" />
-      <option value="$PROJECT_DIR$/client/src/app/app.component.html" />
       <option value="$PROJECT_DIR$/client/src/app/app.component.ts" />
       <option value="$PROJECT_DIR$/client/src/app/app.module.ts" />
       <option value="$PROJECT_DIR$/client/src/app/interceptors/authenticate.interceptor.ts" />
+      <option value="$PROJECT_DIR$/client/src/app/app.component.html" />
+      <option value="$PROJECT_DIR$/client/src/app/components/vehicle-form/vehicle-form.component.ts" />
     </changedPaths>
+  </component>
+  <component name="JsBowerSettings">
+    <bower-package value="" />
+    <bower.json value="" />
   </component>
   <component name="ProjectId" id="1widSmE9tcD6WHtJUtGxE26jNdJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -121,6 +161,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Users\fg_dell\source\repos\Vega\client\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="ReaderModeSettings">
+    <option name="showLigatures" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="es6.move.members.recent.items">
@@ -166,6 +209,9 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="Vega-endpoints#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/Vega-endpoints.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="api" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/api/api.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net5.0" />
@@ -196,6 +242,11 @@
         <option name="Build" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.Vega-endpoints#1" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -243,7 +294,13 @@
       <workItem from="1633679610921" duration="792000" />
       <workItem from="1633680486155" duration="3161000" />
       <workItem from="1633684243494" duration="357000" />
-      <workItem from="1633692119404" duration="3759000" />
+      <workItem from="1633692119404" duration="5141000" />
+      <workItem from="1633745965235" duration="218000" />
+      <workItem from="1633747188200" duration="396000" />
+      <workItem from="1633776802201" duration="2005000" />
+      <workItem from="1633779377159" duration="501000" />
+      <workItem from="1633779990552" duration="694000" />
+      <workItem from="1633780776373" duration="3984000" />
     </task>
     <task id="LOCAL-00001" summary="add repository and unit of work">
       <created>1629674981081</created>
@@ -266,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633625596105</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add client side authentication">
+      <created>1633697027260</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1633697027260</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +353,27 @@
     <MESSAGE value="add repository and unit of work" />
     <MESSAGE value="fix" />
     <MESSAGE value="add identity authorization setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="add identity authorization setup" />
+    <MESSAGE value="add client side authentication" />
+    <option name="LAST_COMMIT_MESSAGE" value="add client side authentication" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/api/Startup.cs</url>
+          <line>30</line>
+          <properties documentPath="C:\Users\fg_dell\source\repos\Vega\api\Startup.cs" initialLine="30" containingFunctionPresentation="method 'Configure'">
+            <startOffsets>
+              <option value="1030" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1031" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
